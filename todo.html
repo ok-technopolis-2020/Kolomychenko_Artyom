@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+  </head>
+  <body>
+    <section class="todo-app">
+        <header class="todo-app__header">
+            <h1>Todos</h1>
+        </header>
+        
+        <main class="todo-app__frame">
+            <section class="todo-app__main-controls">
+                <div class="todo-app__main-controls__select-all">
+                    <button class="main-controls__select-all--button" >Select all tasks</button>
+                </div>
+                
+                <div class="main-controls__create-new">
+                    <input type="text" class="main-controls__create-new-input" 
+                    placeholder="What needs to be done?" aria-label="Add new item" />
+                </div>
+            </section>
+
+            <section class="todo-app__tasks">
+                <div class="task-element">
+                    <input type="checkbox" class="task-check-button" value="HTML"/>
+                    <span class="task-check-box" aria-label="Task selected">HTML</span>
+                    <button class="task-delete-button" aria-label="Delete task" hidden></button>
+                </div>
+
+                <div class="task-element">
+                    <input type="checkbox" class="task-check-button" value="CSS"/>
+                    <span class="task-check-box" aria-label="Task selected">CSS</span>
+                    <button class="task-delete-button" aria-label="Delete task" hidden></button>
+                </div>
+    
+                <div class="task-element">
+                    <input type="checkbox" class="task-check-button" value="JS"/>
+                    <span class="task-check-box" aria-label="Task selected">JS</span>
+                    <button class="task-delete-button" aria-label="Delete task" hidden></button>
+                </div>
+    
+                <div class="task-element">
+                    <input type="checkbox" class="task-check-button" value="JS Tool"/>
+                    <span class="task-check-box" aria-label="Task selected">JS Tool</span>
+                    <button class="task-delete-button" aria-label="Delete task" hidden></button>
+                </div>
+            </section>
+
+            <footer class="todo-app__actions-bar">
+                <div class="actions-bar__item">
+                    <span class="task-counter">3 items left</span>
+                </div>
+
+                <div class="actions-bar__item">
+                    <div class="task-filter" aria-label="Filter tasks by status">
+                        <label class="task-filter__item">
+                            <input type="radio" class="task-filter__input" name="filter" checked="checked" value="All" />
+                            <span class="task-filter__text" aria-label="Set all tasks">All</span>
+                        </label>
+
+                        <label class="task-filter__item">
+                            <input type="radio" class="task-filter__input" name="filter" checked="checked" value="All" />
+                            <span class="task-filter__text" aria-label="Set active tasks">Active</span>
+                        </label>
+
+                        <label class="task-filter__item">
+                            <input type="radio" class="task-filter__input" name="filter" checked="checked" value="All" />
+                            <span class="task-filter__text" aria-label="Set completed tasks">Completed</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="actions-bar__item">
+                    <button class="task-clear-completed">Clear completed</button>
+                </div>
+            </footer>
+        </main>
+    </section>
+  </body>
+</html>
